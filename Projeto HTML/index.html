@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiros passos com HTML</title>
+</head>
+
+<body>
+    <h1>Projeto Módulo I</h1>
+    <h2>Prmeiros Passos com HTML</h2>
+    <hr>
+    <h2 id="voltar">Índice</h2>
+    <ul>
+        <li><a href="#computadores">História dos computadores</a></li>
+        <li><a href="#html">Estrutura básica de um HTML</a></li>
+        <li><a href="#tags">TAG's mais utilizadas</a></li>
+        <li><a href="#texto">Tags de formatação de Texto</a></li>
+        <li><a href="#links">Links de referências</a></li>
+    </ul>
+    <h2 id="computadores">História dos computadores</h2>
+    <p>A palavra computador vem de computar, calcular. O surgimento do primeiro computador está diretamente ligada a
+        necessidade humana de calcular. O ábaco, instrumento mecânico de origem chinesa é considerado o primeiro computador, com o passar dos tempos esse tipo de computador não se limitou em apenas calcular X<sup>2</sup>.
+    </p>
+    <blockquote>“Tecnologia é qualquer coisa que não estava por aí quando você nasceu”. Alan Kay</blockquote>
+    <ol>
+        <li><h3>Primeira Geração<small> (1951-1959)</small></h3>
+            <p>Os computadores de primeira geração funcionavam por meio de circuitos e
+                válvulas eletrônicas. Eram imensos e ocupavam uma sala inteira, também consumirem muita energia.</p>
+        </li>
+        <li><h3>Segunda Geração <small>(1959-1965)</small></h3>
+            <p>Os computadores de segunda geração ainda tinha tamanhos muito grandes porém
+                funcionavam por meio de transistores que substituiram as válvulas dos computadores de primeira geração.
+            </p>
+        </li>
+        <li><h3>Terceira Geração <small>(1965-1975)</small></h3>
+            <p>Os computadores da terceira geração funcionavam por circuitos integrados que
+                substituíram os transistores e já apresentavam uma dimensão menor e maior capacidade de processamento.
+                Foi nesse período que os chips foram criados e a utilização de computadores pessoais começou.</p>
+        </li>
+        <li><h3>Quarta Geração <small>(Dias atuais)</small></h3>
+            <p>Com os avanços da tecnologia os computadores diminuiram de tamanho e consumo
+                de energia e aumentaram sua capacidade de processamento de dados.surgem os softwares integrados e a
+                partir da virada do milênio, começam a surgir os computadores de mão. Ou seja, os smartphones, iPod,
+                iPad e tablets, que incluem conexão móvel com navegação na web.</p>
+        </li>
+    </ol>
+    <img style="width: 100%;"
+    src="https://web.tecnico.ulisboa.pt/~ist425329/wordpress/wp-content/uploads/2015/10/evolution-of-computers-744x184.jpg"
+    alt="">
+    <button><a href="#voltar">Início</a></button>
+    <h2 id="html">Estrutura Básica de um HTML</h2>
+    <p><abbr title="Hypertext Markup Language">HTML</abbr> é uma linguagem de marcação utilizada na estruturação de
+        páginas web. Sua sintaxe é bastante simples e é baseada em <strong>tags</strong>, que representam os diversos
+        elementos de uma página, como imagens e links.</p>
+    <p>A estrutura básica de uma página HTML são as principais tags que são necessárias para que o documento seja
+        corretamente interpretado pelos browsers.</p>
+    <p>A instrução <mark>DOCTYPE</mark> deve ser sempre a primeira a aparecer em uma página HTML para indicar ao browser
+        qual versão
+        da linguagem usada, seguida pela abertura e fechamento da tag <mark>html</mark>, que delimita o documento. Sendo
+        assim, todas
+        as demais tags da página devem estar nesse espaço.</p>
+    <p>Abertura e fechamento da tag <mark>head</mark>, que define o cabeçalho do documento. O conteúdo nesse espaço não
+        é visível no
+        browser, mas contém instruções sobre seu conteúdo e comportamento. Dentro dessa tag, por exemplo, podem ser
+        inseridas folhas de estilo e scripts.</p>
+    <p>A tag <mark>meta</mark>, nesse caso, especifica qual conjunto de caracteres (character set ou charset) será usado
+        para
+        renderizar o texto da página. O UTF-8 contém todos os caracteres dos padrões Unicode e ASCII, sendo, portanto, o
+        mais utilizado em páginas web.</p>
+    <p>A tag <mark>title</mark>mark define o título da página, aquele que aparece na janela do navegador e por fim a
+        abertura e
+        fechamento da tag <mark>body</mark>, marcando o espaço no qual deve estar contido o conteúdo visual da página.
+        As demais tags
+        que representam texto, botões etc. devem ser adicionadas nesse intervalo.</p>
+    <button><a href="#voltar">Início</a></button>
+    <h2 id="tags">Tag's HTML</h2>
+    <p>No HTML a definição de níveis de títulos que podem ser utilizados por meio das tags <strong>h1, h2, h3, h4, h5 e
+            h6,</strong> sendo h1 o maior/mais relevante e h6 o menor/menos relevante.</p>
+            <div class="container">
+                <h1>h1-Olá Mundo!</h1>
+                <h2>h2-Olá Mundo!</h2>
+                <h3>h3-Olá Mundo!</h3>
+                <h4>h4-Olá Mundo!</h4>
+                <h5>h5-Olá Mundo!</h5>
+                <h6>h6-Olá Mundo!</h6>
+            </div>
+    <p>Parágrafos de texto são gerados na HTML por meio das tags <strong>p /p</strong>. Esse é um exemplo de tag cuja
+        disposição na tela se dá em forma de bloco, ou seja, um parágrafo é posto sempre abaixo do outro.</p>
+    <p>A inserção de imagens em uma página HTML pode ser feita por meio da tag <strong>img</strong>, que recebe no
+        atributo <strong>src</strong> o endereço do arquivo a ser carregado. O atributo alt indica um texto alternativo
+        que será exibido caso o arquivo não possa ser carregado, e title, que indica o texto que aparecerá como tooltip
+        ao passar o mouse sobre a figura.</p>
+    <p>Os links são utilizados para direcionar o usuário para outras páginas ou para outras partes da mesma página. Nos
+        dois casos, utilizamos a tag <strong>a</strong>, que possui o atributo <strong>href</strong> no qual indicamos o
+        destino daquele link.</p>
+    <p>Listas são elementos úteis para organizar e ordenar itens que estão relacionados de alguma forma. No HTML é
+        possível criar essas listas com as seguintes tags: ordenadas com a <strong> tag ol</strong>, não ordenadas com a
+        <strong>tag ul</strong> e seguidas pelas tags <strong>li</strong> que são os itens desta lista.</p>
+    <button><a href="#voltar">Início</a></button>
+    <h2 id="texto">Tag's de formatação de texto</h2>
+    <p>As tags de formatação de texto ajudam a destacar trechos da parte escrita da página, veja alguns exemplos:</p>
+    <ul>
+        <li>tag i e em para itálico/ênfase;</li>
+        <li>tag b e strong para negrito/texto forte;</li>
+        <li>tag small para textos menores que o padrão;</li>
+        <li>tag sup e sub para sobrescrito e subscrito;</li>
+        <li>tag mark para texto destacado;</li>
+    </ul>
+    <button><a href="#voltar">Início</a></button>
+    <h2 id="links">Links de Referências</h2>
+    <ul>
+        <li><a href="#">https://www.todamateria.com.br/historia-e-evolucao-dos-computadores/</a></li>
+        <li><a href="#">https://www.w3schools.com/html/default.asp</a></li>
+        <li><a href="#">https://www.devmedia.com.br/html-basico-codigos-html/16596</a></li>
+    </ul>
+    <button><a href="#voltar">Voltar ao início</a></button>
+</body>
+
+</html
